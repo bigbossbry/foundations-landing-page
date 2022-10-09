@@ -1,24 +1,28 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0px;
     font-family: Roboto, serif;
+    margin: 0px;
 }
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.headerlogo {
+.logo {
     font-size: 24px;
     color: #F9FAF8;
 }
 
-.hero-section {
+.hero {
     display: flex;
     justify-content: center;
 }
@@ -37,6 +41,16 @@ body {
 .image {
     max-width: 400px;
     
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 300px;
+    width: 250px;
 }
 
 img {
@@ -62,7 +76,17 @@ button {
 }
 
 .header,
-.hero-section,
+.hero,
 .footer {
     background-color: #1F2937;
+}
+
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
 }
