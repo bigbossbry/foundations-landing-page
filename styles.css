@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
-
+/* Multiple Sections */
 * {
     box-sizing: border-box;
 }
@@ -12,9 +12,40 @@ body {
     margin: 0px;
 }
 
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 50px;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    border: none
+}
+
+.section-1,
+.footer {
+    background-color: #1F2937;
+}
+
+/* Section 1 */
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    gap: 10px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 40px;
 }
 
 .logo {
@@ -25,11 +56,20 @@ body {
 .hero {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .hero-subtext,
 .links {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+.wrapper {
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: space-between;
+    gap: 70px;
+
 }
 
 .hero-text {
@@ -43,10 +83,24 @@ body {
     
 }
 
+/* Section 2*/
 .cards {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
+}
+
+.info-header {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    color: #1F2937;
+    margin: 20px 0px;
+}
+
+#nala {
+    height: 240px;
 }
 
 .item img {
@@ -76,34 +130,29 @@ img {
     display: block;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    gap: 10px;
+/* Section 3*/
+.section-3 {
+    background-color: #E5E7EB;
+    justify-content: space-around;
+    border: 2px solid blue;
 }
 
-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border-radius: 5px;
-    border: none
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color: #1F2937;
+    border: 1px solid red;
 }
 
-.header,
-.hero,
-.footer {
-    background-color: #1F2937;
+.credit {
+    font-weight: bold;
+    color: #1F2937;
+    text-align: right;
+    font-size: 20px;
 }
 
-.section-1,
-.section-2,
-.section-3,
-.section-4 {
-    display: flex;
-    flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
-}
+/* Section 4 */
+
+
 
